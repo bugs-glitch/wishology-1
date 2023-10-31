@@ -1,22 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>Timmy The Barbarian</title>
+<!--
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	//											Instructions											//
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	1.	Change markup title					: "project name" and "release candidate V#" for the version
+	2.	Change variable						: swfUrl, width, height and version
+	3.	Change flash support				: 0+ (Ex.: 8+)
+	4.	Change information about project	: project name, release candidate V# and AAAA/MM/JJ
+	
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <link href="https://file.garden/ZLgW_yeVhBA68fs5/waflash@main/style.css"
-        rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <script>
-        var gameConfig = {
-            swfUrl: "https://bugs-glitch.github.io/shows/data/fairlyoddparents/fairly-oddparents-wishology3/main.swf"
-        }
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+	
+	<!-- 1.	Change markup title -->
+	<title>Nick - Wishology Part 3 RC 1</title>
+	
+	
+	<script type="text/javascript" src="../../html_template_old/scripts/swfobject.js"></script>
+	<script type="text/javascript">
+	
+		<!-- 2.	Change variable -->
+		
+		//! Specifies the URL of your SWF.
+		var swfUrl					= "main.swf";
+		
+		//! Specifies the id of the HTML element you would like to have replaced by your Flash content.
+		var id						= "game";
+		
+		//! Specifies the width of your SWF.
+		var width					= 600;
+		
+		//! Specifies the height of your SWF.
+		var height					= 300;
+		
+		//! Specifies the Flash player version your SWF is published for (format is: "major.minor.release")
+		var version					= "9.0.124";
+		
+		//! Specifies the URL of your express install SWF and activates Adobe express install
+		var expressInstallSwfUrl	= "";
+		
+		//! Specifies your flashvars with name:value pairs. Ex.: var1:"false", ...
+		var flashVars				= {};
+		
+		//! Specifies your nested object element params with name:value pairs. Ex.: params1:"true", ...
+		var params					= {wmode:"opaque"};
+		
+		//! Specifies your object's attributes with name:value pairs. Ex.: attributes1:"true", ...
+		var attributes				= {};
+		
+		swfobject.embedSWF(swfUrl, id, width, height, version, expressInstallSwfUrl, flashVars, params, attributes);
+	
     </script>
-    <div id="waflashContainer">
-        <canvas class="waflashCanvas" id="canvas" tabindex="1"></canvas>
-        <div id="waflashStatus" style="display: none;">Playing...</div>
-<script src="https://file.garden/ZLgW_yeVhBA68fs5/waflash@main/main.js"  rossorigin="anonymous" type="module"></script>
-    </div>
-</body>
+	
+	<style type="text/css" media="screen">
+		@import url("../../html_template_old/css/main.css");
+	</style>
+	
+</head>
+<body>
 
+	<div id="page">
+	
+		<h1><a href="http://www.sarbakan.com">Sarbakan</a></h1>
+		
+		<div id="game">
+			<noscript>
+				<p>You have to enable javascript to play game</p>
+			</noscript>
+			
+			
+			<!-- 3.	Change flash support -->
+			<p>In order to view this page you need Flash Player 8+ support!</p>
+			<p>
+				<a href="http://www.adobe.com/go/getflashplayer">
+					<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+				</a>
+			</p>
+		</div>
+		
+		<div id="push"></div>
+	</div>
+	
+	<div id="footer">
+		<div id="logoSarbakan_reflection"></div>
+		
+		<!-- 4.	Change information about project -->
+		<ul>
+			<li><b>Wishology Part 3</b></li>
+			<li>RC 1</li>
+			<li>2009/04/30</li>
+		</ul>
+		<p>&copy; Sarbakan. All rights reserved.</p>
+	</div>
+	
+</body>
 </html>
